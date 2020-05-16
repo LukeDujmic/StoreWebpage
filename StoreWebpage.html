@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            General Food Store
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="css/PageLayout.css">
+        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+
+        <script src="js/store.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--SEARCH BARS-->
+        <div id="topArea">
+            <header>EPIC FOOD STORE</header>
+            <div class="inputArea">
+                <div class="input">
+                    <p>Search for Categories</p>
+                    <input type="search" id="searchBar1" placeholder="General, Snacks, Dessert....">
+                </div>
+
+                <button onclick="displaySpecific()">Search Category</button>
+            </div>
+
+
+            <div class="inputArea">
+                <div class="input">
+                    <p>Search for Food Items</p>
+                    <input type="search" id="searchBar2" placeholder="Pizza, Potato Chips, Flan....">
+                </div>
+
+                <button onclick="displayItem()">Search Item</button> 
+                <a id="itemAnchor" href="#">Go to (no item input)!</a>
+            </div>
+        </div>
+
+        <!--FOOD CATEGORIES AND ITEMS-->
+        <div id="bodyArea">
+            <div id="generalFood">
+                <img src="images/GeneralFoodLogo.png" class="foodTypeLogo" id="generalLogo">
+                <p style="position: relative; bottom: 0; ">General</p>
+                <hr>
+                <div class="foodItems" id="Pizza">
+                    <a id="pizzaAnchor"></a>
+                    <div class="item">Pizza</div>
+                    
+                    <div class="mainImages" id="mainImagePizza">
+                        
+                        <img src="images/PizzaMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImagePizza">
+                        <p>Price: $12.50</p>
+                        <button onclick="changePizzaImage(pizzaImageArea)">Change Image</button>
+                        <img id="pizzaImageArea">
+                    </div>
+                    
+                </div>
+
+
+                <div class="foodItems" id="Cheeseburger">
+                    <a id="cheeseburgerAnchor"></a>
+                    <div class="item">Cheeseburger</div>
+                    
+                    <div class="mainImages" id="mainImageCheeseburger">
+                        
+                        <img src="images/CheeseburgerMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageCheeseburger">
+                        <p>Price: $4.00</p>
+                        <button onclick="changeCheeseburgerImage(cheeseburgerImageArea)">Change Image</button>
+                        <img id="cheeseburgerImageArea">
+                    </div>
+                    
+                </div>
+
+
+                <div class="foodItems" id="Hotdog">
+                    <a id="hotdogAnchor"></a>
+                    <div class="item">Hotdog</div>
+                    
+                    <div class="mainImages" id="mainImageHotdog">
+                        
+                        <img src="images/HotdogMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageHotdog">
+                        <p>Price: $3.00</p>
+                        <button onclick="changeHotdogImage(hotdogImageArea)">Change Image</button>
+                        <img id="hotdogImageArea">
+                    </div>
+                    
+                </div>
+
+
+                <div class="foodItems" id="Squid">
+                    <a id="squidAnchor"></a>
+                    <div class="item">Salt and Pepper Squid</div>
+                    
+                    <div class="mainImages" id="mainImageSquid">
+                        
+                        <img src="images/SquidMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageSquid">
+                        <p>Price: $13.50</p>
+                        <button onclick="changeSquidImage(squidImageArea)">Change Image</button>
+                        <img id="squidImageArea">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div id="snacks">
+                <img src="images/SnacksLogo.png" class="foodTypeLogo" id="snacksLogo">
+                <p>Snacks</p>
+                <hr>
+
+                <div class="foodItems" id="potatoChips">
+                    <a id="potatoChipsAnchor"></a>
+                    <div class="item">Potato Chips</div>
+                    
+                    <div class="mainImages" id="mainImagePotatoChips">
+                        
+                        <img src="images/PotatoChipsMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImagePotatoChips">
+                        <p>Price: $1.99</p>
+                        <button onclick="changePotatoChipsImage(potatoChipsImageArea)">Change Image</button>
+                        <img id="potatoChipsImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="CheezeIts">
+                    <a id="CheezeItsAnchor"></a>
+                    <div class="item">Cheeze-Its</div>
+                    
+                    <div class="mainImages" id="mainImageCheezeIts">
+                        
+                        <img src="images/CheezeItsMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageCheezeIts">
+                        <p>Price: $2.99</p>
+                        <button onclick="changeCheezeItsImage(CheezeItsImageArea)">Change Image</button>
+                        <img id="CheezeItsImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="Oreo">
+                    <a id="OreoAnchor"></a>
+                    <div class="item">Oreo</div>
+                    
+                    <div class="mainImages" id="mainImageOreo">
+                        
+                        <img src="images/OreoMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageOreo">
+                        <p>Price: $2.75</p>
+                        <button onclick="changeOreoImage(OreoImageArea)">Change Image</button>
+                        <img id="OreoImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="Gummies">
+                    <a id="GummiesAnchor"></a>
+                    <div class="item">Gummies</div>
+                    
+                    <div class="mainImages" id="mainImageGummies">
+                        
+                        <img src="images/GummiesMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageGummies">
+                        <p>Price: $6.99 for a pack of 40</p>
+                        <button onclick="changeGummiesImage(GummiesImageArea)">Change Image</button>
+                        <img id="GummiesImageArea">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+            <div id="dessert">
+                <img src="images/DessertLogo.png" class="foodTypeLogo" id="dessertLogo">
+                <p>Dessert</p>
+                <hr>
+
+                <div class="foodItems" id="Cupcakes">
+                    <a id="CupcakesAnchor"></a>
+                    <div class="item">Strawberry Cupcakes</div>
+                    
+                    <div class="mainImages" id="mainImageCupcakes">
+                        
+                        <img src="images/CupcakesMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageCupcakes">
+                        <p>Price: $3.50</p>
+                        <button onclick="changeCupcakesImage(CupcakesImageArea)">Change Image</button>
+                        <img id="CupcakesImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="Cake">
+                    <a id="CakeAnchor"></a>
+                    <div class="item">Chocolate Cake</div>
+                    
+                    <div class="mainImages" id="mainImageCake">
+                        
+                        <img src="images/CakeMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageCake">
+                        <p>Price: $13.99</p>
+                        <button onclick="changeCakeImage(CakeImageArea)">Change Image</button>
+                        <img id="CakeImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="Flan">
+                    <a id="FlanAnchor"></a>
+                    <div class="item">Flan</div>
+                    
+                    <div class="mainImages" id="mainImageFlan">
+                        
+                        <img src="images/FlanMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageFlan">
+                        <p>Price: $4.99</p>
+                        <button onclick="changeFlanImage(FlanImageArea)">Change Image</button>
+                        <img id="FlanImageArea">
+                    </div>
+                    
+                </div>
+
+                <div class="foodItems" id="IceCream">
+                    <a id="IceCreamAnchor"></a>
+                    <div class="item">Mint Ice Cream</div>
+                    
+                    <div class="mainImages" id="mainImageIceCream">
+                        
+                        <img src="images/IceCreamMain.png">
+                    </div>
+                    
+                    <div class="itemImages" id="itemImageIceCream">
+                        <p>Price: $4.50</p>
+                        <button onclick="changeIceCreamImage(IceCreamImageArea)">Change Image</button>
+                        <img id="IceCreamImageArea">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
+</html>

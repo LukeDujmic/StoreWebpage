@@ -1,0 +1,187 @@
+@font-face
+{
+    font-family: 'Sriracha';
+    src: url(../fonts/Sriracha-Regular.ttf);
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Sriracha';
+}
+
+div#topArea
+{
+    background-color: beige;
+    max-width: 1920px;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+div#topArea > header
+{
+    position: relative;
+    display: inline-block;
+    font-size: 5em;
+    line-height: 1em;
+    color: rgb(59, 28, 2);
+}
+
+div#topArea > .inputArea
+{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+div#topArea > .inputArea > .input > input
+{
+    position: relative;
+    display: inline-block;
+    max-width: 650px;
+    font-size: 2em;
+    border-radius: 10px;
+    border: brown 2px solid;
+    color: rgb(88, 39, 6);
+}
+
+div#topArea > .inputArea > button
+{
+    clear: both;
+    display: block;
+    margin: auto;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+
+div#topArea > .inputArea >.input > p
+{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 2em;
+}
+
+#bodyArea
+{
+    max-width: 1920px;
+    display: flex;
+    margin: auto;
+}
+#bodyArea > div
+{
+    position: relative;
+    width: 33%;
+    display: table-cell;
+    margin: 15px;
+    border-radius: 20px;
+    border: 4px black solid;
+    background-color: rgb(165, 126, 76);
+}
+
+#bodyArea > div > img
+{
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+}
+
+#bodyArea > div > p
+{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+#bodyArea > div > div.foodItems
+{
+    margin: auto;
+
+}
+
+#bodyArea > div > div.foodItems > div.itemImages
+{
+    border: 3px solid brown;
+    width: 90%;
+    margin: 1%;
+    background-color: rgb(255, 241, 203);
+    border-radius: 20px 0px 20px 0px;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: none;
+}
+
+#bodyArea > div > div.foodItems > div.itemImages > button
+{
+    font-size: 2.5em;
+    background-color: orange;
+    border: brown solid 2px;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#bodyArea > div > div.foodItems > div.itemImages > p
+{
+    font-size: 2.5em;
+}
+
+#bodyArea > div > div.foodItems > div.itemImages > img
+{
+    width: 100%;
+}
+#bodyArea > div > div.foodItems > div > img
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#bodyArea > div > div.foodItems > div.mainImages
+{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#bodyArea > div > div.foodItems > div.mainImages > img
+{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+#bodyArea > div > div.foodItems > div.item
+{
+    position: relative;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    background-color: beige;  
+    margin: auto;
+    width: 90%;
+}
+
+a
+{
+    font-size: 2em;
+}
+
+hr 
+{
+    border: white 5px solid;
+    box-shadow: 0px 5px 10px black;
+}
